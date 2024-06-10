@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amartolos - Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Amartolos
+          <div class="contact_info">
+            <img
+              src="html_finalprojimages/envelope.png"
+              alt="https://icons8.com/icon/124377/circled-envelope"
+            />
+            jdoe@jeemail.com
+          </div>
+          <div style="clear: both"></div>
+          <div class="contact_info">
+            <img
+              src="html_finalprojimages/phone.png"
+              alt="https://icons8.com/icon/124377/circled-envelope"
+            />
+            +13456764598
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img
+          src="https://media.giphy.com/media/3o7btO8WLQFyw2q0Qo/giphy.gif"
+          class="profile_image"
+        />
+      </div>
+
+      <div>
+        <h1>
+          Hi, I'm Amartolos!
+          <img
+            src="https://d9jhi50qo719s.cloudfront.net/5n/samples/jn_800.gif?230730113942"
+            width="60px"
+          />
+        </h1>
+        <p>
+          I am a full stack developer with 1 year of experience in both
+          application and presentation layers. I have worked on applications and
+          microservices deployed on IBM Cloud. I am an avid user of IBM Watson
+          Services and have worked on Watson Assistant, NLU, Sentiment analyzer
+          to name a few. I have a broad experience of Python programming
+          language and would like to deep dive with Javascript!
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear: both"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png" />
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg" />
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="https://ezgif.com/save/ezgif-1-2a871517da.png" />
+          <h6>Python</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img
+            src="https://cdn.icon-icons.com/icons2/2699/PNG/512/servicenow_logo_icon_168837.png"
+          />
+          <h6>ServiceNow</h6>
+          <p>6 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img
+            src="https://media-exp1.licdn.com/dms/image/C4E12AQFHjBN-yXAY3A/article-cover_image-shrink_720_1280/0/1635429440895?e=2147483647&v=beta&t=yzoy0Lr2ieKAJbe7PwRayUDsuO63CP14nY91QVEC4aI"
+          />
+          <h6>OpenPages</h6>
+          <p>13 years experience</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div style="clear: both"></div>
+
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>ServiceNow</h3>
+          <ul>
+            <li>
+              Migrating from SHARP (custom platform) to ServiceNow. Flows,
+              workflows, applications, CMDB’s etc..
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="project-card">
+          <h3>Microsoft Power Apps</h3>
+          <ul>
+            <li>
+              Power App Crisis communication application was designed –
+              developed and configured for a big client.
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="project-card">
+          <h3>IBM OpenPages</h3>
+          <ul>
+            <li>Designed and developed a new custom object.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div style="clear: both"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear: both"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I highly recommend Amartolos for his web development skills. He
+          expertly integrated HTML and JavaScript to create a user-friendly
+          landing page that boosted our conversion rate by 20%. He is a valuable
+          asset.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Amartolos is a fantastic collaborator. He seamlessly translated my
+          design mockups into a functional website using HTML and JavaScript.
+          His attention to detail and communication skills are top-notch.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Amartolos consistently delivers high-quality work on time. His
+          proficiency in HTML and JavaScript is impressive. He is a reliable and
+          resourceful developer I can always count on.
+          <span>&#8221;</span>
+        </div>
+      </div>
+
+      <!-- <button id="recommend_btn">Click for Recommendation</button> -->
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>
+          <input type="text" placeholder="Name (Optional)" /> <br />
+          <textarea
+            id="new_recommendation"
+            cols="500"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">
+              Submit
+            </button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="white"
+          width="63px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg" />
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
